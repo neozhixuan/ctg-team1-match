@@ -43,10 +43,31 @@ Before setting up the applications, ensure you have the following installed:
 
 - [Node.js 18.20.3](https://nodejs.org/) (for food-match - version maintained by .nvmrc)
 - [pnpm](https://pnpm.io/installation) (package manager)
+- [nvm](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/) (version manager for Node)
 - [Python 3.10.12](https://www.python.org/) (for ml-service)
 - [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/) (optional, for Docker setup)
 
-## Setup Instructions
+
+## Docker Compose Setup
+
+To set up both applications using Docker Compose, follow these steps:
+
+### Step 1: Build and Start Services
+
+In the root directory of the repository, run:
+
+```bash
+docker-compose up --build
+```
+
+This command builds and starts both the T3 Full Stack App and the Flask ML App using Docker containers.
+
+### Step 2: Access the Applications
+
+- **food-match**: `http://localhost:3000`
+- **ml-service**: `http://localhost:5000`
+
+## Individual Setup Instructions
 
 ### 1. food-match
 
@@ -103,25 +124,6 @@ python test.py
 ```
 
 The Flask ML App should now be running at `http://localhost:5000`.
-
-## Docker Compose Setup
-
-To set up both applications using Docker Compose, follow these steps:
-
-### Step 1: Build and Start Services
-
-In the root directory of the repository, run:
-
-```bash
-docker-compose up --build
-```
-
-This command builds and starts both the T3 Full Stack App and the Flask ML App using Docker containers.
-
-### Step 2: Access the Applications
-
-- **food-match**: `http://localhost:3000`
-- **ml-service**: `http://localhost:5000`
 
 ## Usage
 
