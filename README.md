@@ -22,7 +22,6 @@ Both applications can be set up individually or together using Docker Compose.
 ## Project Structure
 
 \`\`\`
-.
 ├── food-match/
 │   ├── src/
 │   ├── public/
