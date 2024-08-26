@@ -21,7 +21,7 @@ Both applications can be set up individually or together using Docker Compose.
 
 ## Project Structure
 
-\`\`\`
+```
 ├── food-match/
 │   ├── src/
 │   ├── public/
@@ -35,7 +35,7 @@ Both applications can be set up individually or together using Docker Compose.
 │   └── Dockerfile
 ├── docker-compose.yml
 └── README.md
-\`\`\`
+```
 
 ## Prerequisites
 
@@ -52,57 +52,57 @@ Before setting up the applications, ensure you have the following installed:
 
 #### Step 1: Install Dependencies
 
-Navigate to the \`food-match\` directory and install the required Node.js packages:
+Navigate to the `food-match` directory and install the required Node.js packages:
 
-\`\`\`bash
+```bash
 cd food-match
 pnpm install
 pnpm build
-\`\`\`
+```
 
 #### Step 2: Configure Environment Variables
 
-Create a \`.env\` file in the \`food-match\` directory and add your environment variables. Use the \`.env.sample\` file as a reference.
+Create a `.env` file in the `food-match` directory and add your environment variables. Use the `.env.sample` file as a reference.
 
 #### Step 3: Run the Application
 
 Start the development server:
 
-\`\`\`bash
+```bash
 pnpm dev
-\`\`\`
+```
 
-The app should now be running at \`http://localhost:3000\`.
+The app should now be running at `http://localhost:3000`.
 
 ### 2. Flask ML App
 
 #### Step 1: Create a Virtual Environment
 
-Navigate to the \`Flask-ML-app\` directory and create a virtual environment:
+Navigate to the `Flask-ML-app` directory and create a virtual environment:
 
-\`\`\`bash
+```bash
 cd ml-service
 python -m venv venv
 source venv/bin/activate  # On Windows use \`venv\Scripts\activate\`
-\`\`\`
+```
 
 #### Step 2: Install Dependencies
 
 Install the required Python packages:
 
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 #### Step 3: Run the Application
 
 Run the Flask development server:
 
-\`\`\`bash
+```bash
 python test.py
-\`\`\`
+```
 
-The Flask ML App should now be running at \`http://localhost:5000\`.
+The Flask ML App should now be running at `http://localhost:5000`.
 
 ## Docker Compose Setup
 
@@ -112,16 +112,16 @@ To set up both applications using Docker Compose, follow these steps:
 
 In the root directory of the repository, run:
 
-\`\`\`bash
+```bash
 docker-compose up --build
-\`\`\`
+```
 
 This command builds and starts both the T3 Full Stack App and the Flask ML App using Docker containers.
 
 ### Step 2: Access the Applications
 
-- **food-match**: \`http://localhost:3000\`
-- **ml-service**: \`http://localhost:5000\`
+- **food-match**: `http://localhost:3000`
+- **ml-service**: `http://localhost:5000`
 
 ## Usage
 
