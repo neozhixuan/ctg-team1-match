@@ -23,6 +23,7 @@ Both applications can be set up individually or together using Docker Compose.
 
 \`\`\`
 ├── food-match/
+
 │   ├── src/
 │   ├── public/
 │   ├── prisma/
